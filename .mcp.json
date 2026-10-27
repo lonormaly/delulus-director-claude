@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "delulus-director": {
+      "type": "http",
+      "url": "https://director.delulus.productions/director/mcp"
+    }
+  }
+}

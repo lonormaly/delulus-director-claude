@@ -1,0 +1,15 @@
+Copyright (c) 2026 Delulus Productions. All rights reserved.
+
+This repository contains the Delulus Director plugin for Claude: a plugin
+manifest, an MCP server configuration and a course-routing skill. You may
+install and use this plugin with Claude to access the Delulus Director
+service, subject to the Delulus Productions terms of service at
+https://delulus.productions/course/terms?lang=en.
+
+No other right to copy, modify, distribute, sublicense or create derivative
+works from this repository is granted. The course guidance served by the
+Delulus Director service is not part of this repository and is available
+only to eligible, signed-in course students.
+
+THE PLUGIN IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED.
