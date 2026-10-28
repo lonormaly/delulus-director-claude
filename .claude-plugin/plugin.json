@@ -1,7 +1,7 @@
 {
   "name": "delulus-director",
   "displayName": "Delulus Director",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Course guidance for students of the Delulus Productions filmmaking course: story, Script Draft, characters, directing, performance, editing and video prompts.",
   "author": {
     "name": "Delulus Productions",
@@ -19,6 +19,7 @@
     "education",
     "course"
   ],
+  "supportUrl": "https://delulus.productions/director/support",
   "privacyPolicyUrl": "https://delulus.productions/course/privacy?lang=en",
   "termsOfServiceUrl": "https://delulus.productions/course/terms?lang=en",
   "icon": "./assets/delulus-productions-icon.png",
