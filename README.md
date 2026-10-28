@@ -8,7 +8,18 @@ Access is included for eligible course purchasers and requires signing in with a
 
 ## Install
 
-In Claude Code, add this repository as a plugin marketplace, then install the plugin:
+### In the Claude app (claude.ai, desktop or mobile)
+
+1. Open **Settings → Connectors** and choose **Add custom connector**.
+2. Name it **Delulus Director** and paste this URL: `https://director.delulus.productions/director/mcp`
+3. Select **Connect** and sign in with the email linked to your course access, then approve access.
+4. In a chat, make sure Delulus Director is switched on under the **+** menu → **Connectors**, and ask your course question.
+
+Once Delulus Director is listed in Claude's directory, you will also be able to add it from there in one step.
+
+### In Claude Code
+
+Add this repository as a plugin marketplace, then install the plugin:
 
 ```
 /plugin marketplace add lonormaly/delulus-director-claude
