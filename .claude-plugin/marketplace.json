@@ -1,0 +1,24 @@
+{
+  "name": "delulus-productions",
+  "owner": {
+    "name": "Delulus Productions",
+    "email": "course@delulus.productions",
+    "url": "https://delulus.productions"
+  },
+  "metadata": {
+    "description": "Official Delulus Productions plugins for course students."
+  },
+  "plugins": [
+    {
+      "name": "delulus-director",
+      "source": "./",
+      "description": "Course guidance for students of the Delulus Productions filmmaking course: story, Script Draft, characters, directing, performance, editing and video prompts.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Delulus Productions",
+        "email": "course@delulus.productions",
+        "url": "https://delulus.productions"
+      }
+    }
+  ]
+}

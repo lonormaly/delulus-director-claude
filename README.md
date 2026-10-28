@@ -6,6 +6,17 @@ Delulus Director helps students of the Delulus Productions filmmaking course dev
 
 Access is included for eligible course purchasers and requires signing in with an email linked to active course access. You can also ask about your current eligible enrollments. The plugin provides guidance and text preparation; it does not generate images, audio, or video, operate editing software, or make purchases. Projects are discussed in the current conversation, so bring your draft or project summary when continuing in a new chat.
 
+## Install
+
+In Claude Code, add this repository as a plugin marketplace, then install the plugin:
+
+```
+/plugin marketplace add lonormaly/delulus-director-claude
+/plugin install delulus-director@delulus-productions
+```
+
+The first time Claude uses a Delulus Director tool, sign in with the email linked to your course access.
+
 ## Try asking
 
 - "Help me turn a rough film idea into a compelling story."
