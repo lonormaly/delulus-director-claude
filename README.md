@@ -13,7 +13,7 @@ Access is included for eligible course purchasers and requires signing in with a
 1. Open **Settings → Connectors** and choose **Add custom connector**.
 2. Name it **Delulus Director** and paste this URL: `https://director.delulus.productions/director/mcp`
 3. Select **Connect** and sign in with the email linked to your course access, then approve access.
-4. In a chat, make sure Delulus Director is switched on under the **+** menu → **Connectors**, and ask your course question.
+4. In your chat, make sure Delulus Director is switched on under the **+** menu → **Connectors**, and ask your course question.
 
 Once Delulus Director is listed in Claude's directory, you will also be able to add it from there in one step.
 
@@ -37,12 +37,13 @@ The first time Claude uses a Delulus Director tool, sign in with the email linke
 ## What this plugin contains and connects to
 
 - **One skill**, `course-routing`, which tells Claude which course stage a request belongs to and how to read the course guidance completely and currently.
-- **One remote MCP server**, `delulus-director`, at `https://director.delulus.productions/director/mcp`. It is operated by Delulus Productions and exposes three read-only tools:
+- **One remote MCP server**, `delulus-director`, at `https://director.delulus.productions/director/mcp`. It is operated by Delulus Productions and exposes four read-only tools:
   - `director_guidance` returns the course reference material for one stage (story, screenplay, characters, directing, performance or editing), in parts.
   - `director_visual_examples` returns 1–3 original, AI-generated course illustrations of camera, framing and focus choices, with captions and hosted image links.
+  - `director_validate_video_prompt` checks a complete video prompt before delivery and returns either repair issues or the exact validated text. It does not generate media or verify actual provider selection.
   - `course_access` returns the signed-in student's current eligible enrollments (cohort, tier and course language).
 - **Sign-in:** the first tool call opens an OAuth sign-in at `director.delulus.productions`. You confirm your email with a one-time code and approve access. Only an email with active course access can connect.
-- **What is sent:** when Claude calls a tool, the server receives the requested stage and part number, the requested illustration IDs and caption language, or the optional enrollment ID, together with your sign-in token. Your conversation, files and drafts are not sent to the server by these tools.
+- **What is sent:** when Claude calls a tool, the server receives the requested stage and part number, the requested illustration IDs and caption language, or the optional enrollment ID, together with your sign-in token. Video validation additionally sends the complete candidate video prompt, expected duration, selected-reference tags and roles, confirmation flags, and the generated-music choice. The validator does not store the prompt or receive the full conversation or reference files. Guidance and access tools do not send your drafts.
 
 The plugin runs no local code, hooks or scripts, and it installs no packages.
 
